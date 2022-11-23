@@ -13,6 +13,58 @@ void main()
      {
       case 0:
       {
+                int a[100];
+	       int b,i,c,ele,loc,del;
+       	printf("what do u want to do?\n insertion(1)\n deletion(2)\n");
+	      scanf("%d",&c);
+	      switch(c)
+        {
+	       case 1:
+         printf("enter the size of the array\n");
+         scanf("%d",&b);
+         printf("enter the %d array elements\n",b);
+         for(i=0;i<b;i++)
+         {
+		      scanf("%d",&a[i]);
+	       }  
+         printf("the list is\n");
+         for(i=0;i<b;i++)
+         {
+	        printf("%d\n",a[i]);
+         }
+          printf("enter the element to insert\n");
+          scanf("%d",&ele);
+          printf("enter the location of the %d to be inserted \n",ele);
+          scanf("%d",&loc);
+          loc--;
+          for(i=b-1;i>=loc;i--)
+          {
+	         a[i+1]=a[i];
+          }
+          a[loc]=ele;
+          printf("list after insertion ");
+          for(i=0;i<b+1;i++)
+          {
+            printf("%d ",a[i]);
+          }
+          break;
+      case 2:
+       printf("enter the size of the array\n");
+       scanf("%d",&b);
+       printf("enter the %d elements of the array\n",b);
+       for(i=0;i<(b--);i++)
+       {
+	      scanf("%d ",&a[i]);
+       }
+       printf("the list of the elemnts is\n");
+       for(i=0;i<(b);i++)
+       {
+	      printf("%d ",a[i]);
+       }
+       printf("\nenter an element to delet");
+       scanf("%d",&del);
+       break;
+      }
        break;     
       }
       case 1:
