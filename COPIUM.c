@@ -7,7 +7,7 @@ void main()
     while(k==1)
     {
      int p;
-     printf("What Do You Want To Do? \n (0), (1)Number Generator, (2)Reversal, (3)Quadratic, (4)ArmDrome, (5), (6)Area, (7)Digit Sum, (8)Sum Of Even Num, (9)Fahrenheit\n");
+     printf("What Do You Want To Do? \n (0)Insert/Delete, (1)Number Generator, (2)Reversal, (3)Quadratic, (4)ArmDrome, (5), (6)Area, (7)Digit Sum, (8)Sum Of Even Num, (9)Fahrenheit\n");
      scanf("%d",&p);
      switch(p)
      {
