@@ -112,11 +112,9 @@ void main()
         scanf("%d",&d);
         for(a=1;a<=d;a++)
         {
-         printf("\nF1 a=%d b=%d\n",a,b);
          c=0;
          for(b=2;b<=a/2;b++)
          {
-          printf("\nF2 a=%d b=%d\n",a,b);
           if(a%b==0)
           {
             c++;
@@ -125,7 +123,6 @@ void main()
          }
           if(c==0 && a!=1)
           printf("%d\n",a); 
-          printf("\nF3 a=%d b=%d\n",a,b);
         }
        }
        break;
